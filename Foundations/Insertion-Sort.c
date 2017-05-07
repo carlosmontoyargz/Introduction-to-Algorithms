@@ -4,8 +4,8 @@ void InsertionSort(int A[], int n);
 void Leer(int A[], int n);
 void Imprimir(int A[], int n);
 
-int main(int argc, char const *argv[]) {
-
+int main(int argc, char const *argv[])
+{
     int n = 5;
     int A[n];
 
@@ -24,12 +24,14 @@ void InsertionSort(int A[], int n)
 {
     int key, i;
 
-    for (int j = 1; j < n; j++) {
+    for (int j = 1; j < n; j++)
+    {
         key = A[j];
 
         // Inserta A[j] en la secuencia ordenada A[0.. j]
         i = j - 1;
-        while (i >= 0 && A[i] > key) {
+        while (i >= 0 && A[i] > key)
+        {
             A[i + 1] = A[i];
             i -= 1;
         }
