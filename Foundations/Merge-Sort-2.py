@@ -2,7 +2,7 @@
 """Programa que ordena una secuencia usando el algoritmo Merge-Sort.
 
 Es una modificacion en la que el algoritmo agrega todo el arreglo L o R
-restante cuando se encuentra el sentinela.
+restante cuando el sentinela es encontrado.
 """
 import random
 
