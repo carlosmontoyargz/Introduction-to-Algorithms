@@ -25,7 +25,6 @@ def FindMaximumSubarray(A):
 
     for i in range(0, len(A)):
         suma_p += A[i]
-
         if suma_p <= 0:
             p = i
             suma_p = A[i]
