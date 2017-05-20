@@ -39,6 +39,10 @@ def FindMaximumSubarray(A):
 
 A = [13, -3, -25, 20, -3, -16, -23, 18, 20, -7, 12, -5, -22, 15, -4, 7]
 print(A)
-
 res = FindMaximumSubarray(A)
 print A[res[0]:res[1] + 1], res[2]
+
+B = [-2, -1, -13, -4, -3, -7]
+print(B)
+res = FindMaximumSubarray(B)
+print B[res[0]:res[1] + 1], res[2]
