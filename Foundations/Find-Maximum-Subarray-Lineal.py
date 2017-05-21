@@ -9,7 +9,7 @@ lineal.
 def FindMaximumSubarray(A):
     """Encuentra la mayor subsecuencia dentro de la lista A.
 
-    Si se recibe una lista vacia se retorna 0, 0, 0.
+    Si se recibe una lista vacia se lanza una excepcion de tipo IndexError.
 
     Retorna:
     max_left -- El indice izquierdo del subarreglo
@@ -19,11 +19,10 @@ def FindMaximumSubarray(A):
     """
     max_left = 0
     max_right = 0
-    suma = 0
+    suma = A[0]
     p = 0
-    suma_p = 0
-
-    for i in range(0, len(A)):
+    suma_p = A[0]
+    for i in range(1, len(A)):
         suma_p += A[i]
         if suma_p <= 0:
             p = i
