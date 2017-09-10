@@ -33,7 +33,7 @@ def Merge(A, p, q, r):
             j += 1
         k += 1
     # Cuando se encuentra el sentinela se agrega el resto de la otra lista
-    A[k:r+1] = L[i:n1] if R[j] is None else R[j:n2]
+    A[k:r + 1] = L[i:n1] if R[j] is None else R[j:n2]
 
 
 def MergeSortR(A, p, r):
